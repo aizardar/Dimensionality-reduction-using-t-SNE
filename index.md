@@ -36,7 +36,8 @@ from sklearn.manifold import TSNE
 ```
 
 ### Read all structure files (POSCAR)
-#### Note: For each order parameter ($P_z$), we create 50 different configurations where each configuration is a 2x2x2 supercell of the conventional cubic cell containing 16 Fe and 16 Ni atoms as shown below:
+
+Note: For each order parameter ($P_z$), we create 50 different configurations where each configuration is a 2x2x2 supercell of the conventional cubic cell containing 16 Fe and 16 Ni atoms as shown below:
 
 ![](supercells.png)
 
@@ -236,7 +237,10 @@ X_0_3NN,Y_0_3NN,X_0p25_3NN,Y_0p25_3NN,X_0p5_3NN,Y_0p5_3NN,X_last_two_3NN,Y_last_
 
 
 ## 1. T-SNE visualization
-### To know more on how t-SNE algorithm works, please watch this (https://www.youtube.com/watch?v=RJVL80Gg3lA&t=761s&ab_channel=GoogleTechTalks) excellent talk by Laurens van der Maaten
+
+We use t-distributed stochastic neighbor embedding to visualize the SOAP vectors representing local atomic environments in 2-dimensions. The t-SNE algorithm comprises of two main stages. First, t-SNE constructs a probability distribution over pairs of high-dimensional objects in such a way that similar objects are assigned a higher probability while dissimlar points are assigned a lower probability. Second, t-SNE defines a similar probability distribution over the points in the low-dimensional map, and it minimizes the Kullback-Leibler divergence (KL divergence) between the two distributions with respect to the locations of the points in the map. 
+
+To know more on how t-SNE algorithm works, please watch this (https://www.youtube.com/watch?v=RJVL80Gg3lA&t=761s&ab_channel=GoogleTechTalks) excellent talk by Laurens van der Maaten
 
 
 ```python
@@ -402,15 +406,18 @@ fig.colorbar(g)
     
 
 
-## Let's now trace back few of the local atomic environments resulting in high and low orbital moment anisotropy. 
+### Let's now trace back few of the local atomic environments resulting in high and low orbital moment anisotropy. 
 
-#### Following illustration was made using inkscape and VESTA
+Following illustration was made using inkscape and VESTA
 
 ![](soap_tsne_only_fig_c_high_dpi.png)
 
-# Effect of perplexity
+While t-SNE plots often seem to display clusters as shown in the plot above, the visual clusters can be influenced strongly by the chosen parameters and therefore a good understanding of the parameters for t-SNE is necessary. One of the parameter is perplexity which basically determines the variance of the Gaussian distributions that are used to measure similarities in the high-dimensional space. So one can think of the perplexity as a type of effective number of nearest neighbors. If the perplexity is set to 10, one can say that there are about 10 points that are sitting in the mode of this gaussian. In the following, we see the effect of increasing perplexity.
 
-## perplexity = 10
+### Effect of perplexity
+
+
+## Perplexity = 10
 
 
 ```python
@@ -543,7 +550,7 @@ plt.show()
     
 ![png](output_22_0.png)
     
-
+Discuss here..................
 
 ## perplexity = 20
 
@@ -678,6 +685,7 @@ plt.show()
     
 ![png](output_24_0.png)
     
+Discuss here..................
 
 
 ## 2. PCA
