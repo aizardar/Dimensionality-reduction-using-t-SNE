@@ -1,8 +1,8 @@
 ## Correlation between orbital moment anisotropy and local atomic environment of atoms in L10-FeNi
 
-## Aim of the following notebook is to obtain further insights into the correlation between the local atomic environment of an Fe atom and its Orbital Moment Anisotropy (OMA) in L1$_0$ FeNi using Unsupervised machine learning methods.  
+### Aim of the following notebook is to obtain further insights into the correlation between the local atomic environment of an Fe atom and its Orbital Moment Anisotropy (OMA) in L1$_0$ FeNi using Unsupervised machine learning methods.  
 
-### Note: This notebook is a part of the research article "Effect of chemical disorder on the magnetic anisotropy in L10 FeNi from first principles calculations". For further explanation of the plots below, please refer to the original article.
+### Note: This notebook is associated with the research article "Effect of chemical disorder on the magnetic anisotropy in L10 FeNi from first principles calculations". For further explanation of the plots below, please refer to the original article.
 
 ### We define the Orbital Moment Anisotropy (OMA) = $L_{[001]} - L_{[100]}$, where $L_{[001]}$ and $L_{[100]}$ are the total orbital moments when the magnetization lies along the $[001]$ and $[100]$ directions, respectively. 
 
