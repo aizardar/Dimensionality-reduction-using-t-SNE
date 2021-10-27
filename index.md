@@ -1,9 +1,5 @@
 ## Using unsupervised machine learning to investigate the correlation between orbital moment anisotropy and the local atomic envionment of atoms in L10-FeNi alloy 
 
-You can use the [editor on GitHub](https://github.com/aizardar/t-SNE-orbital-anisotropy/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ## Aim of the following notebook is to obtain further insights into the correlation between the local atomic environment of an Fe atom and its Orbital Moment Anisotropy (OMA) in L1$_0$ FeNi using Unsupervised machine learning methods.  
 
 ### Note: This notebook is a part of the research article "Effect of chemical disorder on the magnetic anisotropy in L10 FeNi from first principles calculations". For further explanation of the plots below, please refer to the original article.
