@@ -382,35 +382,13 @@ plt.show()
 
 ### Local atomic environments of Fe atoms in configurations with $P_z$ >= 0.75 (Fig. c)
 
-
-```python
-# Let's first get the plot for P_z >= 0.75 (Fig. c) 
-
-fig, ax = plt.subplots(figsize=(4, 4))
-g = ax.scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = '^', c = Y_last_two_1NN)
-g.set_facecolor('none')
-fig.colorbar(g)
-# fig.savefig("soap_unfilled_0p75.png", dpi=300, bbox_inches='tight')
-```
-
-
-
-
-    <matplotlib.colorbar.Colorbar at 0x7f923d9cc908>
-
-
-
-
-    
-![png](output_19_1.png)
-    
-
-
-### Let's now trace back few of the local atomic environments resulting in high and low orbital moment anisotropy. 
+Let's now trace back few of the local atomic environments resulting in high and low orbital moment anisotropy for Fe atoms belonging to configurations with order parameter of 0.75. 
 
 Following illustration was made using inkscape and VESTA
 
 ![](soap_tsne_only_fig_c_high_dpi.png)
+
+One can see in the plot above, different local atomic environments of Fe atoms with high and low OMA. The cluster of yellow triangles and green triangles corresponds to the "favorable" environment (c1) and the local atomic environment found in perfectly ordered structure (c2). Furthermore, c3 and c4 represents the local atomic environment leading to negative OMA of an Fe atom. One can clearly see that there exists a compositional and configurational difference between the local atomic environments of Fe atoms leading to high and low OMA. It can also be seen that few of the yellow and green triangles lie nearly on top of violet ones indicating that some of the Fe atoms with low OMA have similar local atomic environments (1NN) to that of Fe atoms with high OMA. Note that the distances between clusters are irrelevant as t-SNE mainly preserves the local similarity structure of the data.
 
 While t-SNE plots often seem to display clusters as shown in the plot above, the visual clusters can be influenced strongly by the chosen parameters and therefore a good understanding of the parameters for t-SNE is necessary. One of the parameter is perplexity which basically determines the variance of the Gaussian distributions that are used to measure similarities in the high-dimensional space. So one can think of the perplexity as a type of effective number of nearest neighbors. If the perplexity is set to 10, one can say that there are about 10 points that are sitting in the mode of this gaussian. In the following, we see the effect of increasing perplexity.
 
