@@ -36,7 +36,7 @@ from sklearn.manifold import TSNE
 ### Read all structure files (POSCAR)
 #### Note: For each order parameter ($P_z$), we create 50 different configurations where each configuration is a 2x2x2 supercell of the conventional cubic cell containing 16 Fe and 16 Ni atoms
 
-![](https://github.com/aizardar/Dimensionality-reduction-using-t-SNE/blob/gh-pages/supercells.png)
+![](https://github.com/aizardar/Dimensionality-reduction-using-t-SNE/blob/cdf24b0b4dc8f760666d55a3edd6e3e26c56bb82/supercells.png)
 
 
 ```python
