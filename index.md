@@ -1,4 +1,4 @@
-## Correlation between orbital moment anisotropy and local atomic environment of atoms in L10-FeNi
+## Using Unsupervised machine learning to gain insights into the correlation between atomic property and its local environment of atoms
 
 ### Aim of the following notebook is to obtain further insights into the correlation between the local atomic environment of an Fe atom and its Orbital Moment Anisotropy (OMA) in L1$_0$ FeNi using Unsupervised machine learning methods.  
 
