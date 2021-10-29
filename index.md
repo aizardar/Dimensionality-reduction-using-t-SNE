@@ -301,10 +301,9 @@ marker = '^'
 
 
 # First nearest-neighbours
-
-l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN)#, cmap = cmap,edgecolors='none')
-l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN)#, cmap=cmap,edgecolors='none')
-l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN)#, cmap=cmap,edgecolors='none')
+l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN, vmax = 0.015, vmin = -0.01)
+l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN, vmax = 0.015, vmin = -0.01)
+l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN, vmax = 0.015, vmin = -0.01)
 
 l1.set_facecolor('none')
 l2.set_facecolor('none')
@@ -313,9 +312,9 @@ l3.set_facecolor('none')
 
 # Second nearest-neighbours
 
-l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN)#, cmap=cmap,edgecolors='none')
-l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN)#, cmap=cmap,edgecolors='none')
-l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN)#, cmap=cmap,edgecolors='none')
+l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN, vmax = 0.015, vmin = -0.01)
+l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN, vmax = 0.015, vmin = -0.01)
+l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN, vmax = 0.015, vmin = -0.01)
 
 
 l4.set_facecolor('none')
@@ -326,9 +325,9 @@ l6.set_facecolor('none')
 
 # Third nearest-neighbours
 
-l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN)#, cmap=cmap,edgecolors='none')
-l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN)#, cmap=cmap,edgecolors='none')
-l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN)#, cmap=cmap,edgecolors='none')
+l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN, vmax = 0.015, vmin = -0.01)
+l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN, vmax = 0.015, vmin = -0.01)
+l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN, vmax = 0.015, vmin = -0.01)
 
 l7.set_facecolor('none')
 l8.set_facecolor('none')
@@ -365,10 +364,11 @@ fig.text(0.575,0.31, r'(i)',fontsize=12)
 
 fig.subplots_adjust(right=0.8)
 cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
-bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.005, 0.000, 0.005, 0.010, 0.015])
+bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.010, -0.005, 0.000, 0.005, 0.010, 0.015])
 
-bar.ax.set_yticklabels(['-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
+bar.ax.set_yticklabels(['-0.010','-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
 fig.text(0.99,0.54, r'OMA ($\mu_{B}$)',fontsize=12)
+
 
 #plt.savefig("soap_10_unfilled.png", dpi=300, bbox_inches='tight')
 plt.show()
@@ -388,7 +388,7 @@ Following illustration was made using inkscape and VESTA
 
 ![](soap_tsne_only_fig_c_high_dpi.png)
 
-One can see in the plot above, different local atomic environments of Fe atoms with high and low OMA. The cluster of yellow triangles and green triangles corresponds to the "favorable" environment (c1) and the local atomic environment found in perfectly ordered structure (c2). Furthermore, c3 and c4 represents the local atomic environment leading to negative OMA of an Fe atom. One can clearly see that there exists a compositional and configurational difference between the local atomic environments of Fe atoms leading to high and low OMA. It can also be seen that few of the yellow and green triangles lie nearly on top of violet ones indicating that some of the Fe atoms with low OMA have similar local atomic environments (1NN) to that of Fe atoms with high OMA. Note that the distances between clusters are irrelevant as t-SNE mainly preserves the local similarity structure of the data.
+Explain here!!!!!
 
 While t-SNE plots often seem to display clusters as shown in the plot above, the visual clusters can be influenced strongly by the chosen parameters and therefore a good understanding of the parameters for t-SNE is necessary. One of the parameter is perplexity which basically determines the variance of the Gaussian distributions that are used to measure similarities in the high-dimensional space. So one can think of the perplexity as a type of effective number of nearest neighbors. If the perplexity is set to 10, one can say that there are about 10 points that are sitting in the mode of this gaussian. In the following, we see the effect of increasing perplexity.
 
@@ -446,12 +446,11 @@ cmap = plt.cm.get_cmap('viridis')
 marker = '^'
 
 
-
 # First nearest-neighbours
 
-l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN)#, cmap = cmap,edgecolors='none')
-l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN)#, cmap=cmap,edgecolors='none')
-l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN)#, cmap=cmap,edgecolors='none')
+l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN, vmax = 0.015, vmin = -0.01)
+l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN, vmax = 0.015, vmin = -0.01)
+l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN, vmax = 0.015, vmin = -0.01)
 
 l1.set_facecolor('none')
 l2.set_facecolor('none')
@@ -460,9 +459,9 @@ l3.set_facecolor('none')
 
 # Second nearest-neighbours
 
-l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN)#, cmap=cmap,edgecolors='none')
-l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN)#, cmap=cmap,edgecolors='none')
-l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN)#, cmap=cmap,edgecolors='none')
+l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN, vmax = 0.015, vmin = -0.01)
+l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN, vmax = 0.015, vmin = -0.01)
+l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN, vmax = 0.015, vmin = -0.01)
 
 
 l4.set_facecolor('none')
@@ -473,9 +472,9 @@ l6.set_facecolor('none')
 
 # Third nearest-neighbours
 
-l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN)#, cmap=cmap,edgecolors='none')
-l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN)#, cmap=cmap,edgecolors='none')
-l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN)#, cmap=cmap,edgecolors='none')
+l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN, vmax = 0.015, vmin = -0.01)
+l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN, vmax = 0.015, vmin = -0.01)
+l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN, vmax = 0.015, vmin = -0.01)
 
 l7.set_facecolor('none')
 l8.set_facecolor('none')
@@ -512,9 +511,9 @@ fig.text(0.575,0.31, r'(i)',fontsize=12)
 
 fig.subplots_adjust(right=0.8)
 cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
-bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.005, 0.000, 0.005, 0.010, 0.015])
+bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.01, -0.005, 0.000, 0.005, 0.010, 0.015])
 
-bar.ax.set_yticklabels(['-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
+bar.ax.set_yticklabels(['-0.01','-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
 fig.text(0.99,0.54, r'OMA ($\mu_{B}$)',fontsize=12)
 
 fig.suptitle('Effect of Perplexity (per = 10)', fontsize=16)
@@ -584,9 +583,9 @@ marker = '^'
 
 # First nearest-neighbours
 
-l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN)#, cmap = cmap,edgecolors='none')
-l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN)#, cmap=cmap,edgecolors='none')
-l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN)#, cmap=cmap,edgecolors='none')
+l1 = axs[0][2].scatter(X_t_sne_Pz_0p75_and_1_1NN[:,0:1], X_t_sne_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN, vmax = 0.015, vmin = -0.01)
+l2 = axs[0][1].scatter(X_t_sne_Pz_0p5_1NN[:,0:1], X_t_sne_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN, vmax = 0.015, vmin = -0.01)
+l3 = axs[0][0].scatter(X_t_sne_Pz_0_1NN[:,0:1], X_t_sne_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN, vmax = 0.015, vmin = -0.01)
 
 l1.set_facecolor('none')
 l2.set_facecolor('none')
@@ -595,9 +594,9 @@ l3.set_facecolor('none')
 
 # Second nearest-neighbours
 
-l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN)#, cmap=cmap,edgecolors='none')
-l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN)#, cmap=cmap,edgecolors='none')
-l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN)#, cmap=cmap,edgecolors='none')
+l4 = axs[1][2].scatter(X_t_sne_Pz_0p75_and_1_2NN[:,0:1], X_t_sne_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN, vmax = 0.015, vmin = -0.01)
+l5 = axs[1][1].scatter(X_t_sne_Pz_0p5_2NN[:,0:1], X_t_sne_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN, vmax = 0.015, vmin = -0.01)
+l6 = axs[1][0].scatter(X_t_sne_Pz_0_2NN[:,0:1], X_t_sne_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN, vmax = 0.015, vmin = -0.01)
 
 
 l4.set_facecolor('none')
@@ -608,9 +607,9 @@ l6.set_facecolor('none')
 
 # Third nearest-neighbours
 
-l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN)#, cmap=cmap,edgecolors='none')
-l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN)#, cmap=cmap,edgecolors='none')
-l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN)#, cmap=cmap,edgecolors='none')
+l7 = axs[2][2].scatter(X_t_sne_Pz_0p75_and_1_3NN[:,0:1], X_t_sne_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN, vmax = 0.015, vmin = -0.01)
+l8 = axs[2][1].scatter(X_t_sne_Pz_0p5_3NN[:,0:1], X_t_sne_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN, vmax = 0.015, vmin = -0.01)
+l9 = axs[2][0].scatter(X_t_sne_Pz_0_3NN[:,0:1], X_t_sne_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN, vmax = 0.015, vmin = -0.01)
 
 l7.set_facecolor('none')
 l8.set_facecolor('none')
@@ -647,9 +646,9 @@ fig.text(0.575,0.31, r'(i)',fontsize=12)
 
 fig.subplots_adjust(right=0.8)
 cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
-bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.005, 0.000, 0.005, 0.010, 0.015])
+bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.01, -0.005, 0.000, 0.005, 0.010, 0.015])
 
-bar.ax.set_yticklabels(['-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
+bar.ax.set_yticklabels(['-0.01','-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
 fig.text(0.99,0.54, r'OMA ($\mu_{B}$)',fontsize=12)
 
 fig.suptitle('Effect of Perplexity (per = 20)', fontsize=16)
@@ -728,9 +727,9 @@ marker = '^'
 
 # First nearest-neighbours
 
-l1 = axs[0][2].scatter(X_pca_Pz_0p75_and_1_1NN[:,0:1], X_pca_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN)#, cmap = cmap,edgecolors='none')
-l2 = axs[0][1].scatter(X_pca_Pz_0p5_1NN[:,0:1], X_pca_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN)#, cmap=cmap,edgecolors='none')
-l3 = axs[0][0].scatter(X_pca_Pz_0_1NN[:,0:1], X_pca_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN)#, cmap=cmap,edgecolors='none')
+l1 = axs[0][2].scatter(X_pca_Pz_0p75_and_1_1NN[:,0:1], X_pca_Pz_0p75_and_1_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_1NN, vmax = 0.015, vmin = -0.01)
+l2 = axs[0][1].scatter(X_pca_Pz_0p5_1NN[:,0:1], X_pca_Pz_0p5_1NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0p5_1NN, vmax = 0.015, vmin = -0.01)
+l3 = axs[0][0].scatter(X_pca_Pz_0_1NN[:,0:1], X_pca_Pz_0_1NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_1NN, vmax = 0.015, vmin = -0.01)
 
 l1.set_facecolor('none')
 l2.set_facecolor('none')
@@ -739,9 +738,9 @@ l3.set_facecolor('none')
 
 # Second nearest-neighbours
 
-l4 = axs[1][2].scatter(X_pca_Pz_0p75_and_1_2NN[:,0:1], X_pca_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN)#, cmap=cmap,edgecolors='none')
-l5 = axs[1][1].scatter(X_pca_Pz_0p5_2NN[:,0:1], X_pca_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN)#, cmap=cmap,edgecolors='none')
-l6 = axs[1][0].scatter(X_pca_Pz_0_2NN[:,0:1], X_pca_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN)#, cmap=cmap,edgecolors='none')
+l4 = axs[1][2].scatter(X_pca_Pz_0p75_and_1_2NN[:,0:1], X_pca_Pz_0p75_and_1_2NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_2NN, vmax = 0.015, vmin = -0.01)
+l5 = axs[1][1].scatter(X_pca_Pz_0p5_2NN[:,0:1], X_pca_Pz_0p5_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_2NN, vmax = 0.015, vmin = -0.01)
+l6 = axs[1][0].scatter(X_pca_Pz_0_2NN[:,0:1], X_pca_Pz_0_2NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0_2NN, vmax = 0.015, vmin = -0.01)
 
 
 l4.set_facecolor('none')
@@ -752,9 +751,9 @@ l6.set_facecolor('none')
 
 # Third nearest-neighbours
 
-l7 = axs[2][2].scatter(X_pca_Pz_0p75_and_1_3NN[:,0:1], X_pca_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN)#, cmap=cmap,edgecolors='none')
-l8 = axs[2][1].scatter(X_pca_Pz_0p5_3NN[:,0:1], X_pca_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN)#, cmap=cmap,edgecolors='none')
-l9 = axs[2][0].scatter(X_pca_Pz_0_3NN[:,0:1], X_pca_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN)#, cmap=cmap,edgecolors='none')
+l7 = axs[2][2].scatter(X_pca_Pz_0p75_and_1_3NN[:,0:1], X_pca_Pz_0p75_and_1_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_last_two_3NN, vmax = 0.015, vmin = -0.01)
+l8 = axs[2][1].scatter(X_pca_Pz_0p5_3NN[:,0:1], X_pca_Pz_0p5_3NN[:,1:2],  s=100, alpha=0.9, marker = marker, c = Y_0p5_3NN, vmax = 0.015, vmin = -0.01)
+l9 = axs[2][0].scatter(X_pca_Pz_0_3NN[:,0:1], X_pca_Pz_0_3NN[:,1:2], s=100, alpha=0.9, marker = marker, c = Y_0_3NN, vmax = 0.015, vmin = -0.01)
 
 l7.set_facecolor('none')
 l8.set_facecolor('none')
@@ -791,12 +790,11 @@ fig.text(0.575,0.31, r'(i)',fontsize=12)
 
 fig.subplots_adjust(right=0.8)
 cbar_ax = fig.add_axes([0.85, 0.15, 0.05, 0.7])
-bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.005, 0.000, 0.005, 0.010, 0.015])
+bar = fig.colorbar(l1, cax=cbar_ax, ticks=[-0.010, -0.005, 0.000, 0.005, 0.010, 0.015])
 
-bar.ax.set_yticklabels(['-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
+bar.ax.set_yticklabels(['-0.010','-0.005', '0.00', '0.005', '0.010', '0.015'], fontsize = 12)  # vertically oriented colorbar
 fig.text(0.99,0.54, r'OMA ($\mu_{B}$)',fontsize=12)
 
-#plt.savefig("soap_pca.png", dpi=300, bbox_inches='tight')
 plt.show()
 ```
 
