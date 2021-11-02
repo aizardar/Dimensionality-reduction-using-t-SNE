@@ -1,1 +1,10 @@
 theme: jekyll-theme-cayman
+title: "Unsupervised machine learning for atomic perperty and local environment correlation"
+description: Code for investigating the correlation between orbital moment anisotropy and local chemical environment of atoms in L10 FeNi 
+date:   2021-11-2
+tags: 
+categories:
+- Machine Learning
+
+kramdown:
+  math_engine: mathjax
