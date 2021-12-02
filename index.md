@@ -384,7 +384,6 @@ Following illustration was made using inkscape and VESTA
 
 ![](soap_tsne_only_fig_c_high_dpi.png)
 
-Explain here!!!!!
 
 While t-SNE plots often seem to display clusters as shown in the plot above, the visual clusters can be influenced strongly by the chosen parameters and therefore a good understanding of the parameters for t-SNE is necessary. One of the parameter is perplexity which basically determines the variance of the Gaussian distributions that are used to measure similarities in the high-dimensional space. So one can think of the perplexity as a type of effective number of nearest neighbors. If the perplexity is set to 10, one can say that there are about 10 points that are sitting in the mode of this gaussian. In the following, we see the effect of increasing perplexity.
 
@@ -522,8 +521,7 @@ plt.show()
 
     
 ![png](output_22_0.png)
-    
-Discuss here..................
+
 
 ## perplexity = 20
 
@@ -658,8 +656,6 @@ plt.show()
     
 ![png](output_24_0.png)
     
-Discuss here..................
-
 
 ## 2. PCA
 
