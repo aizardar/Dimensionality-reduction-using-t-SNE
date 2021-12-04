@@ -1,4 +1,4 @@
-This notebook is associated with the research article "Effect of chemical disorder on the magnetic anisotropy in L10 FeNi from first principles calculations". For further explanation of the plots below, please refer to the original article.
+This notebook is associated with the research article "Effect of chemical disorder on the magnetic anisotropy in L10 FeNi from first principles calculations". For further explanation of the plots below, please refer to the [original article]{https://arxiv.org/pdf/2111.12492.pdf}.
 
 We define the Orbital Moment Anisotropy (OMA) = $L_{[001]} - L_{[100]}$, where $L_{[001]}$ and $L_{[100]}$ are the total orbital moments when the magnetization lies along the $[001]$ and $[100]$ directions, respectively. 
 
